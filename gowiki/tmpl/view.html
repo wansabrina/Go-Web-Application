@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>{{.Title}}</h1>
+    <p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+    <div>{{printf "%s" .Body}}</div>
+</body>
+</html>
