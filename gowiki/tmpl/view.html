@@ -2,16 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{.Title}}</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        a { color: #007bff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .card {
+            width: 60%;
+            max-width: 800px;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .divider {
+            height: 1px;
+            width: 100%;
+            background-color: #dee2e6;
+            margin: 15px 0;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #495057;
+            text-align: left; 
+            padding: 20px;
+            background-color: #f9f9f9; 
+            white-space: pre-wrap;
+            border-radius: 5px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 20px;
+        }
+        .btn-edit {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #e83e8c;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        .btn-edit:hover {
+            background-color: #c82373;
+        }
     </style>
 </head>
 <body>
-    <h1>{{.Title}}</h1>
-    <p>[<a href="/edit/{{.Title}}">edit</a>]</p>
-    <div>{{printf "%s" .Body}}</div>
+    <div class="card">
+        <h1>{{.Title}}</h1>
+        <div class="divider"></div>
+        <div class="content">{{printf "%s" .Body}}</div>
+        <div class="divider"></div>
+        <div class="button-container">
+            <a href="/edit/{{.Title}}" class="btn-edit">Edit</a>
+        </div>
+    </div>
 </body>
 </html>

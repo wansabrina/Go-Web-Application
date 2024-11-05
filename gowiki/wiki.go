@@ -7,6 +7,7 @@
 package main
 
 import (
+    "fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -39,8 +40,9 @@ func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
         http.Redirect(w, r, "/edit/"+title, http.StatusFound)
         return
     }
-    p.Body = addLinks(p.Body)
+	p.Body = addLinks(p.Body)
     renderTemplate(w, "view", p)
+
 }
 
 func editHandler(w http.ResponseWriter, r *http.Request, title string) {
@@ -91,9 +93,11 @@ func rootHandler(w http.ResponseWriter, r *http.Request) {
 var linkPattern = regexp.MustCompile(`\[(\w+)\]`)
 
 func addLinks(text []byte) []byte {
-    return linkPattern.ReplaceAllFunc(text, func(match []byte) []byte {
-        pageName := match[1 : len(match)-1] 
-        return []byte(`<a href="/view/` + string(pageName) + `">` + string(pageName) + `</a>`)
+    linkRegexp := regexp.MustCompile(`\[(\w+)\]`)
+    return linkRegexp.ReplaceAllFunc(text, func(match []byte) []byte {
+        pageName := match[1 : len(match)-1] // Menghilangkan tanda kurung []
+        link := fmt.Sprintf(`<a href="/view/%s">%s</a>`, pageName, pageName)
+        return []byte(link)
     })
 }
 

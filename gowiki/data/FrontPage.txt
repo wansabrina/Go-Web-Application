@@ -1,1 +1,8 @@
-This is the front page
+Selamat datang di halaman utama Wiki anda!
+
+Cara menggunakan wiki ini:
+1. Untuk melihat halaman yang ada, cukup klik judul halaman atau masukkan judul halaman di URL (contoh: /view/NamaHalaman).
+2. Untuk membuat halaman baru, ketik judul halaman baru di URL setelah "/view/" (contoh: /view/HalamanBaru) dan tekan Enter.
+3. Di setiap halaman, klik tombol "Edit" untuk memperbarui atau menambahkan konten, lalu tekan "Save" untuk menyimpan perubahan.
+
+[HalamanBaru]
