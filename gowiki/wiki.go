@@ -95,7 +95,7 @@ var linkPattern = regexp.MustCompile(`\[(\w+)\]`)
 func addLinks(text []byte) []byte {
     linkRegexp := regexp.MustCompile(`\[(\w+)\]`)
     return linkRegexp.ReplaceAllFunc(text, func(match []byte) []byte {
-        pageName := match[1 : len(match)-1] // Menghilangkan tanda kurung []
+        pageName := match[1 : len(match)-1]
         link := fmt.Sprintf(`<a href="/view/%s">%s</a>`, pageName, pageName)
         return []byte(link)
     })
