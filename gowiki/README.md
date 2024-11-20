@@ -233,21 +233,21 @@ Dengan perubahan ini, pengguna dapat membuat referensi antar halaman dengan form
 
 ## Cara Kerja dan Tampilan Aplikasi
 1. **Front Page View**  
-    ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/documentation/image.png)
+    ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/gowiki/documentation/image.png)
 
    Tampilan utama aplikasi wiki di mana pengguna dapat melihat konten dari halaman "FrontPage". Halaman ini juga menyediakan tombol "Edit" di pojok kanan bawah untuk memperbarui atau menambahkan konten, serta instruksi singkat tentang cara menggunakan aplikasi wiki.
 
 2. **Edit Front Page** 
-    ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/documentation/image-1.png)
+    ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/gowiki/documentation/image-1.png)
 
    Setelah mengklik tombol "Edit" pada "FrontPage", pengguna akan diarahkan ke halaman edit untuk menambahkan atau mengubah konten. Setelah selesai, pengguna dapat menyimpan perubahan dengan menekan tombol "Save" di pojok kanan bawah, lalu akan kembali ke halaman "Front Page" dengan konten yang diperbarui.
 
 3. **Membuat Halaman Baru**  
-    ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/documentation/image-2.png)
+    ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/gowiki/documentation/image-2.png)
 
    Pengguna dapat membuat halaman baru dengan mengetik judul halaman di URL setelah `/view/`. Misalnya, mengetik `/view/HalamanBaru` akan membuka halaman kosong dengan tombol "Edit" untuk menambahkan konten pertama. 
 
-   ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/documentation/image-3.png)
+   ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/gowiki/documentation/image-3.png)
 
    Setelah penyimpanan, pengguna akan diarahkan kembali ke tampilan view dengan konten halaman baru tersebut.
 
