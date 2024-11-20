@@ -1,8 +1,6 @@
 # Wiki Web Server
 
-| Nama              | NRP        | Kelas  |
-|-------------------|------------|--------|
-| Wan Sabrina Mayzura | 5025211023 | PBKK D |
+Wiki Web Server ini adalah aplikasi wiki sederhana yang dibuat menggunakan bahasa Go. Aplikasi ini memungkinkan pengguna untuk membuat, mengedit, dan melihat halaman wiki melalui server web.
 
 ## Daftar Isi
 
@@ -11,10 +9,6 @@
 3. [Task 2: Redirect ke Front Page](#task-2-redirect-ke-front-page)
 4. [Cara Kerja dan Tampilan Aplikasi](#cara-kerja-dan-tampilan-aplikasi)
 5. [Cara Menjalankan Aplikasi Wiki](#cara-menjalankan-aplikasi-wiki)
-
-## Deskripsi Proyek
-
-Wiki Web Server ini adalah aplikasi wiki sederhana yang dibuat menggunakan bahasa Go. Aplikasi ini memungkinkan pengguna untuk membuat, mengedit, dan melihat halaman wiki melalui server web.
 
 ## Task 1: Membuat Server Web
 

@@ -1,8 +1,6 @@
-# Tutorial Akses Database Relasional dengan Go
+# Akses Database Relasional dengan Go
 
-| Nama              | NRP        | Kelas  |
-|-------------------|------------|--------|
-| Wan Sabrina Mayzura | 5025211023 | PBKK D |
+Pada folder ini akan ditampilkan tutorial Dasar MySQL dengan Go
 
 ## Daftar Isi
 1. [Prasyarat](#prasyarat)
