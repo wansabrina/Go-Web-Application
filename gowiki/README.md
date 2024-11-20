@@ -266,7 +266,7 @@ Dengan perubahan ini, pengguna dapat membuat referensi antar halaman dengan form
    ```
 
 3. **Akses Aplikasi di Browser**
-   Buka browser Anda dan akses alamat berikut:
+   Buka browser dan akses alamat berikut:
    ```
    http://localhost:8080/view/FrontPage
    ```
