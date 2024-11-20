@@ -83,7 +83,7 @@ curl http://localhost:8080/albums
 ```
 Respons JSON-nya akan seperti ini:
 
-![alt text](<documentation/image.png>)
+![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/web-service-gin/documentation/image.png>)
 
 ## 4. Endpoint POST untuk Menambahkan Album
 ### Menambahkan Endpoint Baru
@@ -121,14 +121,14 @@ func main() {
    ```
 2. Respons JSON:
 
-    ![alt text](<documentation/image-1.png>)
+    ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/web-service-gin/documentation/image-1.png>)
 
 3. Verifikasi bahwa album baru berhasil ditambahkan:
    ```bash
    curl http://localhost:8080/albums
    ```
    Respons JSON akan menunjukkan data baru:
-    ![alt text](<documentation/image-2.png>)
+    ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/web-service-gin/documentation/image-2.png>)
 
 ## **5. Endpoint GET untuk Mengambil Album Berdasarkan ID**
 
@@ -168,10 +168,10 @@ func main() {
    curl http://localhost:8080/albums/2
    ```
 2. Respons JSON akan menampilkan data album:
-    ![alt text](<documentation/image-3.png>)
+    ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/web-service-gin/documentation/image-3.png>)
 
 3. Jika ID tidak ditemukan, respons JSON akan menampilkan pesan error:
-    ![alt text](<documentation/image-4.png>)
+    ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/web-service-gin/documentation/image-4.png>)
 
 ## 6. Cara Menjalankan Proyek
 1. **Jalankan server**:
