@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Album Collection</title>
+</head>
+<body>
+  <header class="header">
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search album by ID..." />
+      <button id="search-button">Search</button>
+    </div>
+  </header>
+  
+  <main class="main-content">
+    <div class="content-wrapper">
+      <section class="add-album">
+        <h2>Add New Album</h2>
+        <form id="add-album-form">
+          <input type="text" id="album-title" placeholder="Album Title" required />
+          <input type="text" id="album-artist" placeholder="Artist" required />
+          <input type="number" id="album-price" placeholder="Price" required />
+          <button id="add-button" type="submit">Add Album</button>
+        </form>
+      </section>
+
+      <section class="album-list-section">
+        <h2>All Albums</h2>
+        <div id="album-list" class="album-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
