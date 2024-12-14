@@ -173,6 +173,16 @@ func main() {
 3. Jika ID tidak ditemukan, respons JSON akan menampilkan pesan error:
     ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/web-service-gin/documentation/image-4.png>)
 
+### Screenshot Web
+1. Tampilan Awal
+    ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/web-service-gin/documentation/image-5.png>)
+
+2. Mencari Album Berdasarkan ID
+    ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/web-service-gin/documentation/image-6.png>)
+
+3. Menambahkan Album Baru
+    ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/web-service-gin/documentation/image-7.png>)
+
 ## 6. Cara Menjalankan Proyek
 1. **Jalankan server**:
    Pastikan Anda berada di direktori proyek dan jalankan:

@@ -4,11 +4,10 @@ Wiki Web Server ini adalah aplikasi wiki sederhana yang dibuat menggunakan bahas
 
 ## Daftar Isi
 
-1. [Deskripsi Proyek](#deskripsi-proyek)
-2. [Task 1: Membuat Server Web](#task-1-membuat-server-web)
-3. [Task 2: Redirect ke Front Page](#task-2-redirect-ke-front-page)
-4. [Cara Kerja dan Tampilan Aplikasi](#cara-kerja-dan-tampilan-aplikasi)
-5. [Cara Menjalankan Aplikasi Wiki](#cara-menjalankan-aplikasi-wiki)
+1. [Task 1: Membuat Server Web](#task-1-membuat-server-web)
+2. [Task 2: Redirect ke Front Page](#task-2-redirect-ke-front-page)
+3. [Cara Kerja dan Tampilan Aplikasi](#cara-kerja-dan-tampilan-aplikasi)
+4. [Cara Menjalankan Aplikasi Wiki](#cara-menjalankan-aplikasi-wiki)
 
 ## Task 1: Membuat Server Web
 
