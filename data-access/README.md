@@ -107,6 +107,10 @@ func main() {
 }
 ```
 
+Output:
+
+![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/data-access/image.png>)
+
 ### Query Data: Beberapa Baris
 Fungsi `albumsByArtist` digunakan untuk mengambil beberapa baris data dari tabel `album` berdasarkan nama artis tertentu. Proses ini mencakup eksekusi query, iterasi melalui hasil yang dikembalikan, dan pemetaan data dari setiap baris ke struktur `Album`. Setiap baris akan ditambahkan ke dalam slice `albums` yang nantinya akan dikembalikan sebagai hasil.
 
@@ -134,6 +138,10 @@ func albumsByArtist(name string) ([]Album, error) {
 }
 ```
 
+Output:
+
+![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/data-access/image-1.png>)
+
 ### Query Data: Satu Baris
 Fungsi `albumByID` digunakan untuk mengambil satu baris data dari tabel `album` berdasarkan `id` yang diberikan. Fungsi ini memanfaatkan `QueryRow` karena hanya mengharapkan satu hasil. Hasil query akan dipetakan ke dalam struktur `Album`. Jika tidak ada data yang ditemukan, fungsi akan mengembalikan pesan error “no such album.”
 
@@ -151,6 +159,10 @@ func albumByID(id int64) (Album, error) {
     return alb, nil                                              // Mengembalikan album jika berhasil ditemukan
 }
 ```
+
+Output:
+
+![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/data-access/image-2.png>)
 
 ### Menambahkan Data Baru
 Fungsi `addAlbum` digunakan untuk menambahkan data baru ke tabel `album`. Dalam proses ini, SQL `INSERT` statement dieksekusi dengan menggunakan metode `Exec`. Fungsi ini menerima parameter berupa objek `Album` yang berisi informasi album yang akan ditambahkan. Setelah data ditambahkan, fungsi ini mengembalikan `ID` dari entri baru tersebut.
@@ -171,6 +183,10 @@ func addAlbum(alb Album) (int64, error) {
 
 Kode ini memungkinkan program untuk berinteraksi dengan database `recordings` pada tabel `album`, baik itu untuk mengambil data beberapa baris, satu baris tertentu, atau menambahkan data baru.
 
+Output:
+
+![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/data-access/image-3.png>)
+
 ## Menjalankan Program
 1. Atur environment variables `DBUSER` dan `DBPASS`:
     ```sh
@@ -181,6 +197,6 @@ Kode ini memungkinkan program untuk berinteraksi dengan database `recordings` pa
     ```sh
     go run .
     ```
-3. Hasil yang diharapkan adalah:
+3. Hasil yang diharapkan jika menjalankan seluruh fungsi:
 
-   ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/data-access/image.png>)
+   ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/data-access/image-4.png>)
