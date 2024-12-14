@@ -117,6 +117,7 @@ db.Delete(&product, 1)
    Setelah program dijalankan, file database `test.db` akan dihasilkan di direktori proyek.
 
 5. **Import File test.db ke TablePlus**
+    
     Di TablePlus, klik tombol Create a new connection atau ikon + pada layar utama. Pilih SQLite dari daftar jenis database yang tersedia. Klik pada tombol Import dari lokasi file test.db, dan klik connect.
     Pada tabelnya sudah ada entri untuk Product.
     
