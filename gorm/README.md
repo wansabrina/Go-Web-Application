@@ -93,7 +93,6 @@ db.Delete(&product, 1)
 ```
 - Menghapus data secara soft delete dengan mengisi kolom `deleted_at`.
 
-
 ## Instalasi dan Penggunaan
 
 1. **Kloning Repositori**  
@@ -116,3 +115,14 @@ db.Delete(&product, 1)
 
 4. **Hasilkan Database**  
    Setelah program dijalankan, file database `test.db` akan dihasilkan di direktori proyek.
+
+5. **Import File test.db ke TablePlus**
+    Di TablePlus, klik tombol Create a new connection atau ikon + pada layar utama. Pilih SQLite dari daftar jenis database yang tersedia. Klik pada tombol Import dari lokasi file test.db, dan klik connect.
+    Pada tabelnya sudah ada entri untuk Product.
+    
+    ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/gorm/documentation/image.png)
+
+    Dan tabel sqlite_sequence yang merupakan tabel sistem yang digunakan oleh SQLite untuk menyimpan informasi tentang nilai autoincrement terakhir yang digunakan untuk setiap tabel yang memiliki kolom AUTOINCREMENT
+
+    ![alt text](https://github.com/wansabrina/Go-Web-Application/raw/main/gorm/documentation/image-1.png)
+
