@@ -182,9 +182,4 @@ Kode ini memungkinkan program untuk berinteraksi dengan database `recordings` pa
     go run .
     ```
 3. Hasil yang diharapkan adalah:
-    ```
-    Connected!
-    Albums found: [{1 Blue Train John Coltrane 56.99} {2 Giant Steps John Coltrane 63.99}]
-    Album found: {2 Giant Steps John Coltrane 63.99}
-    ID of added album: 5
-    ```
+   ![alt text](<https://github.com/wansabrina/Go-Web-Application/raw/main/data-access/image.png>)
